@@ -1,0 +1,40 @@
+/*!
+ * Ext JS Library 3.0.0
+ * Copyright(c) 2006-2009 Ext JS, LLC
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+
+.person-view{
+    background: white;
+    font: 11px Arial, Helvetica, sans-serif;
+}
+.person-view .thumb{
+	/*
+    background: #dddddd;
+    padding: 3px;*/
+}
+/*
+#img-chooser-view .thumb img{
+    height: 150px;
+    width: 150px;
+}*/
+.person-view .thumb-wrap{
+    float: left;
+    margin-right: 5px;
+    cursor:pointer;
+}
+.person-view .x-view-over{
+    background: #efefef url(../ext/resources/images/default/grid/row-over.gif) repeat-x left top;
+}
+.person-view .x-view-selected .thumb{
+    background:transparent;
+}
+.person-view .loading-indicator {
+    font-size:11px;
+    background-image:url('../ext/resources/images/grid/loading.gif');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left:20px;
+    margin:10px;
+}

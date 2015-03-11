@@ -1,0 +1,6 @@
+classes
+*.class
+*.bak
+.svn
+.settings
+lib

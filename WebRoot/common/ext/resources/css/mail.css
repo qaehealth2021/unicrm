@@ -1,0 +1,260 @@
+
+/*邮件操作*/
+
+.mail {
+	background : url(../images/mail/email.png) no-repeat left 0px
+		!important;
+}
+.mail_open {
+	background : url(../images/mail/email_open.png) no-repeat left 0px
+		!important;
+}
+.mail_edit {
+	background : url(../images/mail/email_edit.png) no-repeat left 0px
+		!important;
+}
+.mail_add {
+	background : url(../images/mail/email_add.png) no-repeat left 0px
+		!important;
+}
+.mail_go {
+	background: url(../images/mail/email_go.png) no-repeat left 0px
+		!important;
+}
+.mail_save {
+	background: url(../images/mail/email_save.png) no-repeat left 0px
+		!important;
+}
+.mail_delete {
+	background: url(../images/mail/email_delete.png) no-repeat left 0px
+		!important;	
+}
+.mail_recive {
+	background: url(../images/mail/email_recive.png) no-repeat left 0px
+		!important;	
+}
+.mail_go{
+	background: url(../images/mail/email_go.png) no-repeat left 0px
+		!important;	
+}
+.mail_reply{
+	background: url(../images/mail/email_reply.png) no-repeat left 0px
+		!important;	
+}
+.mail_reply_all{
+	background: url(../images/mail/email_reply_all.png) no-repeat left 0px
+		!important;	
+}
+.mail_forward{
+	background: url(../images/mail/email_forward.png) no-repeat left 0px
+		!important;	
+}
+.mail_attach {
+	background: url(../images/mail/email_attach.png) no-repeat left 0px
+		!important;	
+}
+.mail_import_eml {
+	background: url(../images/mail/email_import_eml.png) no-repeat left 0px
+		!important;	
+}
+.mail_export_eml {
+	background: url(../images/mail/email_export_eml.png) no-repeat left 0px
+		!important;	
+}
+.mail_contact {
+	background: url(../images/mail/vcard.png) no-repeat left 0px
+		!important;	
+}
+.mail_contact_add {
+	background: url(../images/mail/vcard_add.png) no-repeat left 0px
+		!important;	
+}
+.mail_contact_delete {
+	background: url(../images/mail/vcard_delete.png) no-repeat left 0px
+		!important;	
+}
+/*邮件Grouping标题图标显示*/
+.mail_grouping_priority_hige {
+	background: url(../images/mail/email_emergency.gif) no-repeat left 0px
+		!important;
+	background-size:10px 12px;
+	padding-left: 10px;
+	position: relative;
+	left:-5px;
+	top:1px;
+}
+.mail_grouping_attach {
+	background: url(../images/mail/email_attach.gif) no-repeat left 0px
+		!important;
+	padding-left: 10px;
+	padding-bottom: 1px;
+	position: relative;
+	left:-4px;
+}
+.mail_grouping_new {
+	background : url(../images/mail/email.png) no-repeat left 0px
+		!important;
+	padding-left: 16px;
+	padding-bottom: 1px;
+	position:relative;
+	left:-1px;
+}
+.mail_grouping_error {
+	background : url(../images/mail/email_error.png) no-repeat left 0px
+		!important;
+	padding-left: 16px;
+	position:relative;
+	left:1px;
+}
+/*邮件Grouping图标显示*/
+
+/*邮件树*/
+.icon-expand-all {
+    background-image: url(../images/extend/expand-all.gif) !important;
+}
+.icon-collapse-all {
+    background-image: url(../images/extend/collapse-all.gif) !important;
+}
+.mail_node_r {
+	background: url(../images/extend/folder_database.png) no-repeat left 0px
+		!important;	
+}
+.mail_node_d {
+	background: url(../images/extend/folder_delete.png) no-repeat left 0px
+		!important;	
+}
+.mail_node_s {
+	background: url(../images/extend/folder_go.png) no-repeat left 0px
+		!important;	
+}
+.mail_node_p {
+	background: url(../images/extend/control_pause_blue.png) no-repeat left 0px
+		!important;	
+}
+.mail_node_c {
+	background: url(../images/extend/folder_page.png) no-repeat left 0px
+		!important;	
+}
+.mail_node_b {
+	background: url(../images/extend/folder.png) no-repeat left 0px
+		!important;	
+}
+.mail_node_q {
+	background: url(../images/extend/folder_magnify.png) no-repeat left 0px
+		!important;	
+}
+.mail_node_rightmenu_select {
+	background-color:#ddd
+}
+/*邮件树*/
+
+/*模板图标*/
+.mail_sign_system {
+	background: url(../images/mail/comments2.gif) no-repeat left 0px
+		!important;	
+}
+.mail_sign_default {
+	background: url(../images/mail/lightbulb.png) no-repeat left 0px
+		!important;	
+}
+.mail_sign_node {
+	background: url(../images/mail/lightbulb_off.png) no-repeat left 0px
+		!important;	
+}
+/*模板图标*/
+
+/*历史往来图标*/
+.mail_dealings_recive {
+	background: url(../images/mail/email_dealings_recive.png) no-repeat left 0px
+		!important;	
+	padding-left:10px;
+	position:relative;
+	left:-6px;
+}
+.mail_dealings_send {
+	background: url(../images/mail/email_dealings_send.png) no-repeat left 0px
+		!important;	
+	padding-left:10px;
+	position:relative;
+	left:-6px;
+}
+/*历史往来图标*/
+
+/*邮件信息面板*/
+.mail_info_label {
+	color:#99A;
+}
+/*邮件信息面板*/
+
+/*邮件Renderer 主题*/
+.mail_subject_priority {
+	background: url(../images/mail/email_emergency.gif) no-repeat left 0px
+		!important;
+	background-size:10px 12px;
+	padding-left: 8px;
+	position: relative;
+	top:1px;
+}
+.mail_subject_attach {
+	background: url(../images/mail/email_attach.gif) no-repeat left 0px
+		!important;
+	padding-left: 10px;
+	position: relative;
+	left:-2px;
+}
+/*彻底删除*/
+.mail_complete_delete {
+	background: url(../images/mail/email_complete_delete.png) no-repeat left 0px
+		!important;	
+}
+/*订单关联*/
+.mail_relate_order {
+	background: url(../images/mail/mail_relate_order.png) no-repeat left 0px
+		!important;	
+}
+
+/*订单售前状态图标*/
+.order_status_shouqian {
+	background: url(../images/mail/order_status_shouqian.png) no-repeat left 0px
+		!important;	
+}
+/*订单售后状态图标*/
+.order_status_shouhou {
+	background: url(../images/mail/order_status_shouhou.png) no-repeat left 0px
+		!important;	
+}
+/*订单售中状态图标*/
+.order_status_shouzhong {
+	background: url(../images/mail/order_status_shouzhong.png) no-repeat left 0px
+		!important;	
+}
+/*邮件视图上下切换图标*/
+.up_down {
+	background: url(../images/mail/up_down.png) no-repeat left 0px
+		!important;	
+}
+/*邮件视图左右切换图标*/
+.mail_left_right {
+	background: url(../images/mail/left_right.png) no-repeat left 0px
+		!important;	
+}
+/*邮件视图上下切换图标*/
+.mail_up_down {
+	background: url(../images/mail/up_down.png) no-repeat left 0px
+		!important;	
+}
+/*邮件下一封图标*/
+.mail_page_down {
+	background: url(../images/mail/mail_page_down.png) no-repeat left 0px
+		!important;	
+}
+/*邮件上一封图标*/
+.mail_page_up {
+	background: url(../images/mail/mail_page_up.png) no-repeat left 0px
+		!important;	
+}
+/*黑名单*/
+.mail_black {
+	background : url(../images/mail/userid32.png) no-repeat left 0px
+		!important;
+}

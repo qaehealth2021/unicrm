@@ -1,0 +1,22 @@
+#
+#Wed Dec 26 16:37:34 CST 2012
+genBasicCompId=true
+sessionFactoryName=config.spring.HibernateSessionFactory
+profile=
+daoSFId=
+version=3.2
+jndiPath=
+detectM2M=false
+reStrategyClass=
+springDaoFile=
+useJavaTypes=true
+keyGenerator=identity
+libInstallFolder=
+addLibs2Project=false
+genVersionTag=false
+sessionFactoryId=sessionFactory
+basePersistenceClass=com.sail.cot.domain.IdEntity
+reSettingsFile=/CotSystemV8/hibernate.reveng.xml
+configFile=/CommonProj/src/config/spring/applicationContext.xml
+createConfigFile=false
+addLibs2Classpath=false

@@ -1,0 +1,798 @@
+.page_sel {
+	background: url(../images/extend/magnifier.png) no-repeat left 2px
+		!important;
+}
+
+.page_no_sel {
+	background: url(../images/extend/magnifier_zoom_out.png) no-repeat left
+		2px !important;
+}
+
+.page_add_sel {
+	background: url(../images/extend/magnifier_zoom_in.png) no-repeat left
+		2px !important;
+}
+
+.page_del {
+	background: url(../images/extend/delete.png) no-repeat left 2px
+		!important;
+}
+.page_del_small {
+	background: url(../images/extend/delete_small.png) no-repeat left 2px
+		!important;
+}
+.page_mod {
+	background: url(../images/extend/application_edit.png) no-repeat left
+		2px !important;
+}
+
+.page_copy {
+	background: url(../images/extend/page_copy.png) no-repeat left 2px
+		!important;
+}
+
+.page_save {
+	background: url(../images/extend/disk.png) no-repeat left 2px !important;
+}
+
+.page_save_all {
+	background: url(../images/extend/disk_multiple.png) no-repeat left 2px
+		!important;
+}
+
+.page_retract {
+	background: url(../images/extend/arrow_redo.png) no-repeat left 2px
+		!important;
+}
+
+.page_retract_all {
+	background: url(../images/extend/arrow_out.png) no-repeat left 2px
+		!important;
+}
+/*合并按钮*/
+.page_combination {
+	background: url(../images/extend/arrow_in.png) no-repeat left 2px
+		!important;
+}
+/*审核*/
+.page_check_ok {
+	background: url(../images/extend/cup.png) no-repeat left 2px !important;
+}
+/*审核不通过*/
+.page_check_error {
+	background: url(../images/extend/cup_error.png) no-repeat left 2px
+		!important;
+}
+/*上一页*/
+.page_resultset_previous {
+	background: url(../images/extend/resultset_previous.png) no-repeat left
+		2px !important;
+}
+/*下一页*/
+.page_resultset_next {
+	background: url(../images/extend/resultset_next.png) no-repeat left 2px
+		!important;
+}
+
+.page_modAll {
+	background: url(../images/extend/application_form_edit.png) no-repeat
+		left 2px !important;
+}
+
+.page_modAll {
+	background: url(../images/extend/application_form_edit.png) no-repeat
+		left 2px !important;
+}
+
+.page_calculator {
+	background: url(../images/extend/calculator.png) no-repeat left 2px
+		!important;
+}
+
+.page_add {
+	background: url(../images/extend/add.png) no-repeat left 2px !important;
+}
+
+.page_add_small {
+	background: url(../images/extend/add_small.png) no-repeat left 2px !important;
+}
+
+.page_table_row_insert {
+	background: url(../images/extend/table_row_insert.png) no-repeat left
+		2px !important;
+}
+
+.page_lightning_go {
+	background: url(../images/extend/lightning_go.png) no-repeat left 2px
+		!important;
+}
+
+.page_application_put {
+	background: url(../images/extend/application_put.png) no-repeat left 2px
+		!important;
+}
+
+.page_script_go {
+	background: url(../images/extend/script_go.png) no-repeat left 2px
+		!important;
+}
+
+.page_key_go {
+	background: url(../images/extend/key_go.png) no-repeat left 2px
+		!important;
+}
+
+.page_newspaper_go {
+	background: url(../images/extend/newspaper_go.png) no-repeat left 2px
+		!important;
+}
+
+.page_pencil_go {
+	background: url(../images/extend/pencil_go.png) no-repeat left 2px
+		!important;
+}
+
+.page_drive_go,.file_system_reship,.file_system_reship_head {
+	background: url(../images/extend/drive_go.png) no-repeat left 2px
+		!important;
+	height: 18px;
+}
+
+.page_table_save {
+	background: url(../images/extend/table_save.png) no-repeat left 2px
+		!important;
+}
+.page_table_save_small {
+	background: url(../images/extend/table_save_small.png) no-repeat left 2px
+		!important;
+}
+.page_reset {
+	background: url(../images/extend/application.png) no-repeat left 2px
+		!important;
+}
+
+.page_config {
+	background: url(../images/extend/cog.png) no-repeat left 2px !important;
+}
+
+.page_print {
+	background: url(../images/extend/printer.png) no-repeat left 2px
+		!important;
+}
+
+/*样品管理图片*/
+.page_img {
+	background: url(../images/extend/picture.png) no-repeat left 2px
+		!important;
+	position: relative;
+	height: 18px;
+}
+
+/*配件分发*/
+.page_fen {
+	background: url(../images/extend/arrow_divide.png) no-repeat left 2px
+		!important;
+}
+
+/*数量指定*/
+.page_allocated {
+	background: url(../images/extend/basket_go.png) no-repeat left 2px
+		!important;
+}
+
+/*普通导入*/
+.page_import {
+	background: url(../images/extend/arrow_down.png) no-repeat left 2px
+		!important;
+}
+
+/*合同分配*/
+.page_fenpei {
+	background: url(../images/extend/chart_pie.png) no-repeat left 2px
+		!important;
+}
+
+/*Excel导入*/
+.page_excel {
+	background: url(../images/extend/page_excel.png) no-repeat left 2px
+		!important;
+}
+
+.page_from {
+	background: url(../images/extend/hourglass_go.png) no-repeat left 2px
+		!important;
+}
+
+/*上传图标*/
+.page_upload {
+	background: url(../images/extend/arrow_up.png) no-repeat left 2px
+		!important;
+}
+/*下载图标*/
+.page_download {
+	background: url(../images/extend/download.png) no-repeat left 2px
+		!important;
+}
+/*转载图标*/
+.page_zhuan {
+	background: url(../images/extend/zhuan.png) no-repeat left 2px
+		!important;
+}
+
+/*取消图标*/
+.page_cancel {
+	background: url(../images/extend/cancel.png) no-repeat left 2px
+		!important;
+}
+
+/*移除图标*/
+.page_remove {
+	background: url(../images/extend/cross.png) no-repeat left 2px
+		!important;
+}
+
+/*重新排序图标*/
+.page_resort {
+	background: url(../images/extend/page_refresh.png) no-repeat left 2px
+		!important;
+}
+
+/*修改密码*/
+.key {
+	background: url(../images/extend/bullet_key.png) no-repeat left 2px
+		!important;
+}
+
+/*帮助图标*/
+.help {
+	background: url(../images/extend/help.png) no-repeat left 2px !important;
+}
+
+/*重新登录*/
+.link {
+	background: url(../images/extend/link.png) no-repeat left 2px !important;
+}
+
+/*你好,XXX图标*/
+.user {
+	background: url(../images/extend/user.png) no-repeat left 2px !important;
+}
+
+/*表格列表图标*/
+.gird_list {
+	background: url(../images/extend/application_view_list.png) no-repeat
+		left 2px !important;
+}
+
+/*新增*/
+.gird_add {
+	background: url(../images/extend/page_add.png) no-repeat left 2px
+		!important;
+}
+
+/*修改*/
+.gird_edit {
+	background: url(../images/extend/page_edit.png) no-repeat left 2px
+		!important;
+}
+
+/*上传*/
+.gird_upload {
+	background: url(../images/extend/application_get.png) no-repeat left 2px
+		!important;
+}
+
+/*保存*/
+.gird_save {
+	background: url(../images/extend/grid_save.png) no-repeat left 2px
+		!important;
+}
+
+/*导入*/
+.gird_exp {
+	background: url(../images/extend/page_go.png) no-repeat left 2px
+		!important;
+}
+
+/*导入*/
+.gird_close {
+	background: url(../images/extend/grid_close.png) no-repeat left 2px
+		!important;
+}
+
+/*生成应付款*/
+.gird_deal {
+	background: url(../images/extend/coins_add.png) no-repeat left 2px
+		!important;
+}
+/*上传单个文件的按钮图标*/
+.upload-icon {
+	background: url('../images/extend/picture_edit.png') no-repeat left 2px
+		!important;
+	position: relative;
+	height: 18px;
+}
+
+/*删除单个文件的按钮图标*/
+.upload-icon-del {
+	background: url('../images/extend/picture_delete.png') no-repeat left
+		2px !important;
+	position: relative;
+	height: 18px;
+}
+
+/*左右移下拉框*/
+.ecv_autoSizeDropDown {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 12px;
+	font-style: normal;
+	color: #201B74;
+	background-color: #FFFFFF;
+	width: expression((         this .         offsetWidth >         150)?
+		      
+		'auto':  
+		     '150' );
+}
+
+/*根据需要显示部分边框*/
+.rightBorder {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #99bbe8;
+}
+
+.leftBorder {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #99bbe8;
+}
+
+.topBorder {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #99bbe8;
+}
+
+.bottomBorder {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #99bbe8;
+}
+
+/*系统设置*/
+.menu_system {
+	background: url(../images/extend/cog.png) no-repeat left 2px !important;
+}
+
+/*条形码的校验按钮*/
+.page_check {
+	background: url(../images/extend/page_refresh.png) no-repeat left 2px
+		!important;
+}
+
+/*样品编辑页面统计规格按钮*/
+.page_tong {
+	background: url(../images/extend/page_gear.png) no-repeat left 2px
+		!important;
+}
+
+/*条形码校验按钮*/
+.page_jiao {
+	background: url(../images/extend/plugin_go.png) no-repeat left 2px
+		!important;
+}
+
+/*下拉框禁用时不会变太灰*/
+.combo-disabled {
+	cursor: default;
+	opacity: .7;
+	-moz-opacity: .7;
+	filter: alpha(opacity = 70);
+}
+/*菜单统计分析图标*/
+.chart_bar {
+	background: url(../images/extend/chart_bar.png) no-repeat left 2px
+		!important;
+}
+/*菜单客户管理图标*/
+.group {
+	background: url(../images/extend/group.png) no-repeat left 2px
+		!important;
+}
+/*菜单系统日志图标*/
+.monitor {
+	background: url(../images/extend/monitor.png) no-repeat left 2px
+		!important;
+}
+/*菜单厂家管理图标*/
+.lorry {
+	background: url(../images/extend/lorry.png) no-repeat left 2px
+		!important;
+}
+/*菜单样品管理图标*/
+.package {
+	background: url(../images/extend/package.png) no-repeat left 2px
+		!important;
+}
+/*菜单业务管理图标*/
+.world {
+	background: url(../images/extend/world.png) no-repeat left 2px
+		!important;
+}
+/*菜单单证管理图标*/
+.note {
+	background: url(../images/extend/note.png) no-repeat left 2px !important;
+}
+/*菜单财务管理图标*/
+.money_dollar {
+	background: url(../images/extend/money_dollar.png) no-repeat left 2px
+		!important;
+}
+/*菜单邮件管理图标*/
+.email {
+	background: url(../images/extend/email.png) no-repeat left 2px
+		!important;
+}
+/*计算器图片*/
+.cal {
+	background: url(../images/extend/calculator.png) no-repeat left 2px
+		!important;
+}
+/*导入货号*/
+.importEle {
+	background: url(../images/extend/arrow_switch.png) no-repeat left 0px
+		!important;
+}
+
+/****邮件页面图标****/
+.email_1 {
+	background: url(../images/extend/email.png) no-repeat left 0px
+		!important;
+	padding-left: 16px;
+	position: relative;
+	left: 1px;
+}
+
+.email_open {
+	background: url(../images/extend/email_open.png) no-repeat left 0px
+		!important;
+	height: 18px;
+}
+
+.email_attach {
+	background: url(../images/extend/email_attach.gif) no-repeat left 0px
+		!important;
+	padding-left: 10px;
+	position: relative;
+	left: -3px;
+}
+
+.email_error_1 {
+	background: url(../images/extend/email_error.png) no-repeat left 0px
+		!important;
+	padding-left: 35px;
+	padding-bottom: 5px;
+	position: relative;
+	left: 10px;
+}
+/*邮件旗帜*/
+.mail_flag_default {
+	white-space: nowrap;
+	display: block;
+	font: normal 11px arial, tahoma, sans-serif;
+	background-image: url(../images/default/menu/item-over.gif);
+	background-color: #dbecf4;
+
+	/*
+    border-color:#aaccf6;
+    
+	background-repeat: repeat-x;
+    border-width: 1px;
+    background-position: left bottom;
+    border-style:solid;
+    */
+}
+
+.mail_flag_clear,.mail_flag_red,.mail_flag_orange,.mail_flag_yellow,.mail_flag_green,.mail_flag_blue,.mail_flag_purple,.mail_flag_pink
+	{
+	background: url(../images/extend/flag_red.png) no-repeat left 0px
+		!important;
+	padding-left: 16px;
+}
+
+.mail_flag_clear {
+	background: url(../images/extend/flag_clear.png) no-repeat left 0px
+		!important;
+	filter: alpha(opacity = 30);
+	opacity: 0.3;
+}
+
+.mail_flag_orange {
+	background: url(../images/extend/flag_orange.png) no-repeat left 0px
+		!important;
+}
+
+.mail_flag_yellow {
+	background: url(../images/extend/flag_yellow.png) no-repeat left 0px
+		!important;
+}
+
+.mail_flag_green {
+	background: url(../images/extend/flag_green.png) no-repeat left 0px
+		!important;
+}
+
+.mail_flag_blue {
+	background: url(../images/extend/flag_blue.png) no-repeat left 0px
+		!important;
+}
+
+.mail_flag_purple {
+	background: url(../images/extend/flag_purple.png) no-repeat left 0px
+		!important;
+}
+
+.mail_flag_pink {
+	background: url(../images/extend/flag_pink.png) no-repeat left 0px
+		!important;
+}
+/*邮件翻译显示类型按钮未被显中*/
+.mail_translate .x-btn-text {
+	color: #77F;
+	text-decoration: underline;
+}
+
+.page_pencil_go_1 {
+	background: url(../images/extend/pencil_go.png) no-repeat left 2px
+		!important;
+	padding-left: 16px;
+	position: relative;
+	left: 1px;
+	bottom: 3px;
+	padding-bottom: 3px;
+}
+
+.email_replay {
+	background: url(../images/extend/arrow_undo.png) no-repeat left 0px
+		!important;
+	padding-left: 16px;
+	position: relative;
+	left: 1px;
+}
+
+.email_view_body {
+	background-image: url(../images/extend/application.png) !important;
+}
+
+.email_view_history {
+	background-image: url(../images/extend/application_tile_horizontal.png)
+		!important;
+}
+
+.email_view_default {
+	background-image: url(../images/extend/application_split.png) !important;
+}
+
+.page_refresh {
+	background: url(../images/extend/arrow_refresh.png) no-repeat left 0px
+		!important;
+}
+/*邮件服务控制 停止按钮图标*/
+.email_ctrl_stop {
+	background: url(../images/extend/control_stop_blue.png) no-repeat left
+		0px !important;
+}
+/*邮件服务控制 启动按钮图标*/
+.email_ctrl_start {
+	background: url(../images/extend/control_play_blue.png) no-repeat left
+		0px !important;
+}
+/*邮件服务控制 暂停按钮图标*/
+.email_ctrl_pause {
+	background: url(../images/extend/control_pause_blue.png) no-repeat left
+		0px !important;
+}
+/*邮件服务控制 重启按钮图标*/
+.email_ctrl_restart {
+	background: url(../images/extend/control_restart_blue.jpg) no-repeat
+		left 0px !important;
+}
+/****邮件页面图标****/
+
+/*按钮*/
+.x-btn-text-icon .x-btn-icon-small-left .x-btn-text {
+	height: 18px;
+}
+
+.x-btn-icon .x-btn-small .x-btn-text {
+	height: 18px;
+}
+/*菜单*/
+.x-menu-item-icon {
+	height: 18px;
+}
+/*控制toolbar里面的checkbox的高度*/
+.x-form-check-wrap {
+	height: 19px;
+}
+
+/*查询重置图标*/
+.page_resetForm {
+	background: url(../images/extend/arrow_rotate_clockwise.png) no-repeat
+		left 2px !important;
+}
+
+/*查询工具栏的隐藏按钮下拉框searchcombo样式*/
+.hideCombo {
+	background: #dfe8f6;
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+}
+/*图片放大*/
+.zoomPic {
+	background: url(../images/extend/magnifier_zoom_in.png) no-repeat left
+		2px !important;
+}
+
+.file_system_reship_head {
+	padding-left: 16px;
+	padding-bottom: 3px;
+	bottom: 3px;
+	position: relative;
+}
+/*文档管理*/
+.file_system_reship_head {
+	padding-left: 16px;
+	padding-bottom: 3px;
+	bottom: 3px;
+	position: relative;
+}
+
+.file_system_reship {
+	padding-left: 16px;
+	padding-bottom: 3px;
+}
+
+.file-itemselector-add {
+	background: url(../images/extend/right2.gif) no-repeat left 0px
+		!important;
+}
+
+.file-itemselector-remove {
+	background: url(../images/extend/left2.gif) no-repeat left 0px
+		!important;
+}
+
+.filesystem_menu {
+	background: url(../images/extend/folder_star.png) no-repeat left 2px
+		!important;
+}
+
+.filesystem_share {
+	background: url(../images/extend/folder_user.png) no-repeat left 0px
+		!important;
+}
+.folder {
+	background: url(../images/extend/folder.png) no-repeat left 0px
+		!important;	
+}
+/*登录页面*/
+.username {
+	background: url(../images/extend/user.png) no-repeat 1px 2px;
+	padding-left: 20px;
+	font-weight: bold;
+	background-color: black;
+	color: white
+}
+
+.password {
+	background: url(../images/default/grid/hmenu-lock.png) no-repeat 1px 2px;
+	padding-left: 20px;
+	font-weight: bold;
+	background-color: black;
+	color: white
+}
+
+.otp {
+	background: url(../images/extend/key.png) no-repeat 1px 2px;
+	padding-left: 20px;
+	font-weight: bold;
+	background-color: black;
+	color: white
+}
+
+.login {
+	background: url(../images/default/grid/drop-yes.gif) no-repeat left 2px
+		!important;
+}
+
+.login_reset {
+	background: url(../images/default/grid/refresh.gif) no-repeat left 2px
+		!important;
+}
+
+/*可见性图标*/
+.grid_cansee {
+	background: url(../images/extend/television.png) no-repeat left top
+		!important;
+}
+/*可见性图标*/
+.page_popedom {
+	background: url(../images/extend/user.png) no-repeat left top !important;
+}
+
+.ex-panel {
+	border-style: solid;
+	border-color: transparent;
+	border-width: 0;
+}
+
+/*单号文本框后面的按钮*/
+.seq_cal {
+	width: 17px;
+	height: 21px;
+	border: 0;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	background: url(../images/extend/calculator.png) no-repeat left 2px
+		!important;
+}
+
+.email_go {
+	background: url(../images/mail/email_go.png) no-repeat left 0px
+		!important;
+}
+
+.fax_go {
+	background: url(../images/mail/email_export.png) no-repeat left 0px
+		!important;
+}
+.loginform_image {
+	background: url("../images/extend/logo.png") no-repeat left top;
+}
+
+.loginbgimage {
+	background:#D5E4F2 url(../images/extend/bg.png) left top repeat-x;
+}
+#loginDiv {
+	width:841px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*订单关联*/
+.mail_relate_order {
+	background: url(../images/mail/mail_relate_order.png) no-repeat left 0px
+		!important;	
+}
+/*
+input.submit{
+   width:62px;
+   height:57px;
+   background:url("../images/extend/submit.jpg") left top no-repeat;
+   border:0px;
+   cursor:pointer;
+}
+input.submit:hover{
+   background-position:0 -57px;
+}*/
+/*树的在线员工图标*/
+.online_emp {
+	background-image: url(../images/extend/U01.png) !important;
+}
+/*树的未在线员工图标*/
+.unline_emp {
+	background-image: url(../images/extend/U00.png) !important;
+}
+/*上传图标*/
+.page_file_upload {
+	background-image: url(../images/extend/file_upload.png) !important;
+}
+
+/*Excel导出*/
+.excel_out {
+	background: url(../images/extend/excel.png) no-repeat left 2px
+		!important;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+          "http://struts.apache.org/dtds/struts-2.0.dtd">  
+<struts> 
+	<package name="mailsend" extends="struts-default">
+		<action name="*_mailsend" class="com.sail.cot.action.mail.CotMailSendAction" method="{1}">
+			<result name="query">/mail/send/send.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+	</package>
+</struts>  

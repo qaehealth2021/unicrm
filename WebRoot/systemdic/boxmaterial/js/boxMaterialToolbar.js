@@ -1,0 +1,77 @@
+/**
+ * @author zhao
+ * @class QH.boxMaterial.GridToolbar
+ * @extends QH.ux.grid.BaseToolbar
+ */
+QH.boxMaterial.GridToolbar = Ext.extend(QH.ux.grid.BaseToolbar,{
+	objName:'CotBoxMaterial',
+	tbarModel:'all',
+	initComponent:function(){
+		this.items = [{
+  			xtype:'textfield',
+			searchName:'boxMaterial.value',
+			isSearchField:true,
+			emptyText:'包材名称',
+			width:90,
+			maxLength:100,
+			maxLengthText:'包材名称长度最大不能超过{0}'
+ 		},{
+  			xtype:'textfield',
+			searchName:'boxMaterial.valueEn',
+			isSearchField:true,
+			emptyText:'英文',
+			width:90,
+			maxLength:150,
+			maxLengthText:'英文长度最大不能超过{0}'
+ 		},{
+  			xtype:'textfield',
+			searchName:'boxMaterial.remark',
+			isSearchField:true,
+			emptyText:'备注',
+			width:90,
+			maxLength:200,
+			maxLengthText:'备注长度最大不能超过{0}'
+ 		},{
+ 			hidden:true,
+ 			xtype:'textfield',
+			searchName:'boxMaterial.unit',
+			isSearchField:true,
+			emptyText:'计价单位',
+			width:90,
+			maxLength:20,
+			maxLengthText:'计价单位长度最大不能超过{0}'
+ 		},{
+ 			hidden:true,
+ 			xtype:'numberfield',
+			searchName:'startMaterialPrice',
+			isSearchField:true,
+			emptyText:'材料单价',
+			width:90,
+			decimalPrecision:4,
+			minValue:1.0E-4,
+			minText:'材料单价最小值不能小于{0}',
+			maxValue:9999.9999,
+			maxText:'材料单价最大值不能超过{0}'
+		},{
+			hidden:true,
+			xtype:'numberfield',
+			searchName:'endMaterialPrice',
+			isSearchField:true,
+			emptyText:'材料单价',
+			width:90,
+			decimalPrecision:4,
+			minValue:1.0E-4,
+			minText:'材料单价最小值不能小于{0}',
+			maxValue:9999.9999,
+			maxText:'材料单价最大值不能超过{0}'
+ 		},{
+			xtype:'searchcombo',
+			searchName:'boxMaterial.identityId',
+			store:this.grid.store,
+			checkModified:true,
+			emptyText:''
+		}];
+		QH.boxMaterial.GridToolbar.superclass.initComponent.call(this);
+	}
+});
+Ext.reg('boxmaterialtoolbar',QH.boxMaterial.GridToolbar);

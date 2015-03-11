@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+	<allow>
+		<create creator="spring" javascript="baseSerivce">
+			<param name="beanName" value="BaseService" />
+		</create>
+		<create creator="spring" javascript="cotLoginService">
+			<param name="beanName" value="CotLoginService" />
+		</create>
+	</allow>
+	<signatures>
+		<![CDATA[
+			import java.util.List;
+			import java.lang.Object;
+			baseSerivce.saveOrUpdateList(List<Object> ids);
+			baseSerivce.saveOrUpdateObjRId(List<Object> list);
+			baseSerivce.deleteListReturnIds(List<String> ids, String objName);
+			baseSerivce.deleteIntListReturnIds(List<Integer> ids, String objName);
+			baseSerivce.findIsExistValue(Map<String,String> map);
+			baseSerivce.findBeanFieldValue(String domain,String field,Map<String, String> map);
+			baseSerivce.deleteObjAndFile(String tbName, String field, List<String> ids);
+			baseSerivce.updateTable(String domain, Map<String, String> valueParam,String whereJson);
+			baseSerivce.getListByCondition(String hql,Map<String, Integer> valueParam);
+		]]> 
+	
+	</signatures>
+</dwr>

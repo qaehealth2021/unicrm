@@ -1,0 +1,163 @@
+/**
+ * @author zhao
+ * @class QH.company.Grid
+ * @extends QH.ux.grid.BaseGridPanel
+ */
+QH.company.GridPanel = Ext.extend(QH.ux.grid.BaseGridPanel,{
+	editorDisable:true,
+	tbarCfg:{
+		objName:'CotCompany',
+		tbarModel:'all',
+		hiddenSaveAllBtn:true,
+		hiddenRetractBtn:true,
+		hiddenRetractAllBtn:true,
+		listeners:{
+			'beforeadddata':{
+				fn:function(tbar,defaultData){
+//					openWindowBase(468, 810,'modify_company.do?gridId='+tbar.grid.getId());
+					openDeskWin('新增公司','modify_company.do?gridId='+tbar.grid.getId());
+					return false;
+				}
+			}
+		}
+	},
+	initComponent:function(){
+		var grid = this;
+		this.store = new QH.company.Store();
+		this.columns = [{
+			header:'',
+			hidden:true,
+			dataIndex:'id'
+		},{
+			header:'中文名称',
+			editor:{
+				xtype:'textfield',
+				maxLength:50,
+				maxLengthText:'中文名称长度最大不能超过{0}'
+			},
+			dataIndex:'companyName'
+		},{
+			header:'英文名称',
+			editor:{
+				xtype:'textfield',
+				maxLength:150,
+				maxLengthText:'英文名称长度最大不能超过{0}'
+			},
+			dataIndex:'companyNameEn'
+		},{
+			header:'简称',
+			editor:{
+				xtype:'textfield',
+				maxLength:50,
+				maxLengthText:'简称长度最大不能超过{0}'
+			},
+			dataIndex:'companyShortName'
+		},{
+			header:'公司法人',
+			editor:{
+				xtype:'textfield',
+				maxLength:50,
+				maxLengthText:'公司法人长度最大不能超过{0}'
+			},
+			dataIndex:'companyCorporation'
+		},{
+			header:'中文地址',
+			editor:{
+				xtype:'textfield',
+				maxLength:100,
+				maxLengthText:'中文地址长度最大不能超过{0}'
+			},
+			dataIndex:'comapanyAddr'
+		},{
+			header:'英文地址',
+			editor:{
+				xtype:'textfield',
+				maxLength:100,
+				maxLengthText:'英文地址长度最大不能超过{0}'
+			},
+			dataIndex:'companyAddrEn'
+		},{
+			header:'公司电话',
+			editor:{
+				xtype:'textfield',
+				maxLength:100,
+				maxLengthText:'公司电话长度最大不能超过{0}'
+			},
+			dataIndex:'companyNbr'
+		},{
+			header:'公司传真',
+			editor:{
+				xtype:'textfield',
+				maxLength:100,
+				maxLengthText:'公司传真长度最大不能超过{0}'
+			},
+			dataIndex:'companyFax'
+		},{
+			header:'邮编',
+			editor:{
+				xtype:'textfield',
+				maxLength:20,
+				maxLengthText:'邮编长度最大不能超过{0}'
+			},
+			dataIndex:'companyPost'
+		},{
+			header:'公司网址',
+			editor:{
+				xtype:'textfield',
+				maxLength:100,
+				maxLengthText:'公司网址长度最大不能超过{0}'
+			},
+			dataIndex:'companyWebSite'
+		},{
+			header:'邮箱',
+			editor:{
+				xtype:'textfield',
+				maxLength:100,
+				maxLengthText:'邮箱长度最大不能超过{0}'
+			},
+			dataIndex:'companyMail'
+		},{
+			header:'备注',
+			editor:{
+				xtype:'textfield',
+				maxLength:200,
+				maxLengthText:'备注长度最大不能超过{0}'
+			},
+			dataIndex:'remark'
+		},{
+			header:'Logo',
+			hidden:true,
+			editor:{
+				xtype:'textfield',
+				maxLength:200,
+				maxLengthText:'Logo长度最大不能超过{0}'
+			},
+			dataIndex:'companyLogo'
+		},{
+			header:'序列号',
+			hidden:true,
+			editor:{
+				maxLength:10,
+				maxLengthText:'序列号长度最大不能超过{0}'
+			},
+			dataIndex:'identityId'
+		}];
+		
+		this.tbar = {
+			xtype:'companytoolbar',
+			grid:this
+		}
+		
+		QH.company.GridPanel.superclass.initComponent.call(this);
+		this.on("rowdblclick",function(grid,rowIndex,e){
+			this.updateData();
+		},this);
+	},
+	updateData:function(){
+		var grid = this;
+		var record = grid.getSelectionModel().getSelected();
+//		openWindowBase(468, 810,'modify_company.do?gridId='+grid.getId()+'&id='+record.get('id'));
+		openDeskWin("公司"+record.get('companyShortName'),'modify_company.do?gridId='+grid.getId()+'&id='+record.get('id'),"company_"+record.get('id'));
+	}
+});
+Ext.reg('companygrid',QH.company.GridPanel);

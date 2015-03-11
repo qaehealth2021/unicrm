@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+<!-- 系统对象映射 -->
+<dwr>
+	<allow>
+	    <convert converter="bean" javascript="CotArea" match="com.sail.cot.domain.CotArea" />
+		<convert converter="bean" javascript="CotDept" match="com.sail.cot.domain.CotDept" />
+		<convert converter="bean" javascript="CotCompany" match="com.sail.cot.domain.CotCompany" />
+		<convert converter="bean" javascript="CotEmps" match="com.sail.cot.domain.CotEmps" />
+		<convert converter="bean" javascript="CotModule" match="com.sail.cot.domain.CotModule" />
+		<convert converter="bean" javascript="CotModuleFun" match="com.sail.cot.domain.CotModuleFun" />
+		<convert converter="bean" javascript="CotNation" match="com.sail.cot.domain.CotNation" />
+		<convert converter="bean" javascript="CotProvice" match="com.sail.cot.domain.CotProvice" />
+		<convert converter="bean" javascript="CotContact" match="com.sail.cot.domain.CotContact" />
+		<convert converter="bean" javascript="CotCustomer" match="com.sail.cot.domain.CotCustomer" />
+		<convert converter="bean" javascript="CotPopedomEmpData" match="com.sail.cot.domain.CotPopedomEmpData" />
+		<convert converter="bean" javascript="CotPopedomEmpFun" match="com.sail.cot.domain.CotPopedomEmpFun" />
+		<convert converter="bean" javascript="CotDictionary" match="com.sail.cot.domain.CotDictionary" />
+		<convert converter="bean" javascript="CotSeq" match="com.sail.cot.domain.CotSeq" />
+		<convert converter="bean" javascript="CotSeqCfg" match="com.sail.cot.domain.CotSeqCfg" />
+		<convert converter="bean" javascript="CotPopedomRecord" match="com.sail.cot.domain.CotPopedomRecord" />
+		
+		<convert match="com.zhao.mail.entity.*" converter="bean" />
+		<convert converter="bean" javascript="CotMail" match="com.sail.cot.domain.CotMail">
+			<param name="exclude" value="cotMailBodyHtml,cotMailBodyText"></param>
+		</convert>
+		<convert converter="bean" javascript="CotMailAccountCfg" match="com.sail.cot.domain.CotMailAccountCfg" />
+		<convert converter="bean" javascript="CotMailAttach" match="com.sail.cot.domain.CotMailAttach" />
+		<convert converter="bean" javascript="CotMailBodyHtml" match="com.sail.cot.domain.CotMailBodyHtml" />
+		<convert converter="bean" javascript="CotMailBodyText" match="com.sail.cot.domain.CotMailBodyText" />
+		<convert converter="bean" javascript="CotMailPageCfg" match="com.sail.cot.domain.CotMailPageCfg" />
+		<convert converter="bean" javascript="CotMailReceiveCache" match="com.sail.cot.domain.CotMailReceiveCache" />
+		<convert converter="bean" javascript="CotMailPop3Cfg" match="com.sail.cot.domain.CotMailPop3Cfg" >
+			<param name="exclude" value="accountCfg"></param>
+		</convert>
+		<convert converter="bean" javascript="CotMailSmtpCfg" match="com.sail.cot.domain.CotMailSmtpCfg" >
+			<param name="exclude" value="accountCfg"></param>
+		</convert>
+		<convert converter="bean" javascript="CotMailImapCfg" match="com.sail.cot.domain.CotMailImapCfg" >
+			<param name="exclude" value="accountCfg"></param>
+		</convert>
+		<convert converter="bean" javascript="CotReadMailInfoVO" match="com.sail.cot.domain.vo.CotReadMailInfoVO" />
+		<convert converter="bean" javascript="CotMailTemplate" match="com.sail.cot.domain.CotMailTemplate" />
+		<convert converter="bean" javascript="CotMailTree" match="com.sail.cot.domain.CotMailTree" />
+		<convert converter="bean" javascript="CotMailFlag" match="com.sail.cot.domain.CotMailFlag" />
+		<convert converter="bean" javascript="CotRptFile" match="com.sail.cot.domain.CotRptFile" />
+		<convert converter="bean" javascript="CotRptType" match="com.sail.cot.domain.CotRptType" />
+		<convert converter="bean" javascript="CotSms" match="com.sail.cot.domain.CotSms" />
+		<convert converter="bean" javascript="CotFaxSend" match="com.sail.cot.domain.CotFaxSend" />
+		<convert converter="bean" javascript="CotFaxRecv" match="com.sail.cot.domain.CotFaxRecv" />
+		<convert converter="bean" javascript="CotPrice" match="com.sail.cot.domain.CotPrice" />
+		<convert converter="bean" javascript="CotContactGroup" match="com.sail.cot.domain.CotContactGroup" />
+		<convert converter="bean" javascript="CotContactGroupDetail" match="com.sail.cot.domain.CotContactGroupDetail" />
+		<convert converter="bean" javascript="CotSysLog" match="com.sail.cot.domain.CotSysLog" />
+		<convert converter="bean" javascript="CotFaxdeviceMap" match="com.sail.cot.domain.CotFaxdeviceMap" />
+		<convert converter="bean" javascript="CotFileTree" match="com.sail.cot.domain.CotFileTree" />
+		<convert converter="bean" javascript="CotFileSystem" match="com.sail.cot.domain.CotFileSystem" />
+		<convert converter="bean" javascript="CotMailGarbageCfg" match="com.sail.cot.domain.CotMailGarbageCfg" />
+	</allow>
+	
+	<signatures>
+		<![CDATA[ 
+		]]>
+	</signatures>
+</dwr>

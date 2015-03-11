@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Excel 通用导入方法XML定义 
+	table（必须）：存放数据库的表，用于表示要忘那张表插入数据
+	convert_key:(选填)：覆盖关键字，true表示，根据该列的值来查询数据库空是否有记录存在，有的话覆盖，没有的话插入
+	domain-package(必须):定义在系统对象映射类所在的包
+	field(必填)：存放要插入数据库的字段，改字段的值从Excel文件中读取,改域配置有一些属性如下
+		relate_table(选填)：关联的数据库表（如果需要关联查询或插入其他表，需要填写该属性），
+							一般用于，Excel写的是中文，而插入数据库的时候需要是ID
+							（注意：要写成对象名，不能用数据库名，如：CotCompany,而不是cot_company）
+		db_op(选填):数据库操作模式，目前有的值为
+					query:查询（根据field的值查询出相关数据）
+					insert：插入（更加field的值，插入数据库表）
+		db_op_field(选填):查询/插入的数据库字段（当db_op为query时）,插入到数据库的字段(（当db_op为insert时)
+		return_field(选填):查询/插入结果的返回值,返回当中的某列
+		rely_on(选填)：依赖项，表示改field字段依赖于配置的字段，用逗号隔开
+		rely_mode(选填)：依赖模式，有两个取值：single和double，
+						single表示单向依赖，即该field只依赖与rely_on配置的值
+						double：双向依赖，即该field既依赖于rely_on，rely_on配置的值也依赖于该field
+		rely_class(选填)：依赖想与该field之间需要处理的类，该类必须实现ExcelRelyOnBiz这个接口，
+						  需要精确到包名如：com.achui.cot.class
+		data_type(选填)：该字段的数据类型（默认为String类型）
+		data_length(选填)：该字段的数据长度（如果不填，则默认不检验）
+		check_class(选填)：该字段的校验类，必须实现IExcelCheck接口
+-->
+<!--  
+<excel-import>
+	<domain-package>com.sail.cot.domain</domain-package>
+	<table>cot_emps</table>
+	<convert-key>emps_id</convert-key>
+	<field-set>
+		<field data_type="java.lang.String" data_length="100",check_class="">emps_id</field>
+		<field relate_table="CotCompany" 
+			   db_op="insert" 
+			   db_op_field="COMPANY_SHORTNAME" 
+			   return_field="id">cot_company_id</field>
+		<field>emps_name</field>
+		<field rely_on="emps_name,emps_name_en" 
+			   rely_mode="single" 
+			   rely_class="com.sail.cot.common.excel.MyExcelBiz">emps_remark</field>
+		<field>emps_name_en</field>
+	</field-set>
+</excel-import>
+-->
+
+<excel-import>
+	<domain-package>com.sail.cot.domain</domain-package>
+	<table>cot_clause</table>
+	<convert-key>clause_name</convert-key>
+	<field-set>
+		<field data_type="java.lang.String" data_length="2" check_class="com.sail.cot.common.excel.check.MyDataCheck">clause_name</field>
+		<field data_type="java.lang.String" data_length="100" check_class="com.sail.cot.common.excel.check.MyDataCheck">clause_remark</field>
+	</field-set>
+</excel-import>
+

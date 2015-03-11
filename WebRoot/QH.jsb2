@@ -1,0 +1,152 @@
+{
+    "projectName": "QH",
+    "deployDir": "QH Dir",
+    "licenseText": "QH System",
+    "pkgs": [{
+    	"name": "common",
+    	"isDebug": true,
+		"fileIncludes": [{
+            "text": "adv-vtypes.js",
+            "path": "common/js/"
+        },{
+            "text": "bindCombo.js",
+            "path": "common/js/"
+        },{
+        	"text": "common.js",
+            "path": "common/js/"
+        },{
+        	"text": "commonControl.js",
+            "path": "common/js/"
+        },{
+        	"text": "constants.js",
+            "path": "common/js/"
+        },{
+        	"text": "cookies.js",
+            "path": "common/js/"
+        },{
+        	"text": "DisplayFieldEtd.js",
+            "path": "common/js/"
+        },{
+        	"text": "ext-override.js",
+            "path": "common/js/"
+        },{
+        	"text": "GetInfoFromIdcard.js",
+            "path": "common/js/"
+        },{
+        	"text": "Number.js",
+            "path": "common/js/"
+        },{
+        	"text": "popedom.js",
+            "path": "common/js/"
+        },{
+        	"text": "uploadpanel.js",
+            "path": "common/js/"
+        },{
+        	"text": "constants.js",
+            "path": "common/js/"
+        }]
+    },{
+    	"name": "ux_form",
+    	"isDebug": true,
+		"fileIncludes": [{
+            "text": "BaseComboBox.js",
+            "path": "common/js/ux/form/"
+        },{
+            "text": "ComboBoxTree.js",
+            "path": "common/js/ux/form/"
+        },{
+            "text": "FindExistField.js",
+            "path": "common/js/ux/form/"
+        },{
+            "text": "ImageField.js",
+            "path": "common/js/ux/form/"
+        },{
+            "text": "ImageToolBar.js",
+            "path": "common/js/ux/form/"
+        },{
+            "text": "SearchComboxField.js",
+            "path": "common/js/ux/form/"
+        },{
+            "text": "HtmlEditor.js",
+            "path": "common/js/ux/form/"
+        }]
+    },{
+    	"name": "ux_grid",
+    	"isDebug": true,
+		"fileIncludes": [{
+            "text": "BaseCheckColumn.js",
+            "path": "common/js/ux/grid/"
+		},{
+            "text": "BaseGrid.js",
+            "path": "common/js/ux/grid/"
+        },{
+            "text": "BaseRowEditor.js",
+            "path": "common/js/ux/grid/"
+        },{
+            "text": "BaseToolbar.js",
+            "path": "common/js/ux/grid/"
+        }]
+    },{
+    	"name": "ux_tree",
+    	"isDebug": true,
+		"fileIncludes": [{
+        	"text": "BaseTreeGrid.js",
+            "path": "common/js/ux/tree/"
+        },{
+        	"text": "BaseTreeRowEditor.js",
+            "path": "common/js/ux/tree/"
+        },{
+        	"text": "TreeGridNodeUI.js",
+            "path": "common/js/ux/tree/"
+        },{
+        	"text": "TreeStoreLoader.js",
+            "path": "common/js/ux/tree/"
+        }]
+    },{
+    	"name": "ux_tab",
+    	"isDebug": true,
+    	"fileIncludes": [{
+        	"text": "DynamicTabPanel.js",
+            "path": "common/js/ux/tab/"
+        }]
+    },{
+    	"name": "ux_report",
+    	"isDebug": true,
+    	"fileIncludes": [{
+        	"text": "printPanel.js",
+            "path": "common/js/ux/report/"
+        }]
+    },{
+    	"name": "ux_win",
+    	"isDebug": true,
+    	"fileIncludes": [{
+        	"text": "UploadWindow.js",
+            "path": "common/js/ux/win/"
+        },{
+        	"text": "printWin.js",
+            "path": "common/js/ux/win/"
+        }]
+    },{
+    	"name": "controls",
+    	"isDebug": true,
+    	"fileIncludes": [{
+        	"text": "CheckBoxModule.js",
+            "path": "common/contorls/"
+        },{
+        	"text": "CityBaseCmbo.js",
+            "path": "common/contorls/"
+        },{
+        	"text": "CompanyBaseCombo.js",
+            "path": "common/contorls/"
+        },{
+        	"text": "DeptBaseCombo.js",
+            "path": "common/contorls/"
+        },{
+        	"text": "ModuleTree.js",
+            "path": "common/contorls/"
+        },{
+        	"text": "NationBaseCombo.js",
+            "path": "common/contorls/"
+        }]
+    }]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+          "http://struts.apache.org/dtds/struts-2.0.dtd">  
+<struts> 
+	<package name="module" extends="struts-default">
+		<action name="*module" class="com.sail.cot.action.system.module.CotModuleAction" method="{1}">
+			<result name="jsondata">/jsondata.jsp</result>
+			<result name="moduletree">/system/module/moduletree.jsp</result>
+			<result name="queryCfg">/module/module.jsp</result>
+			<result name="defineExcel">/customerexcel/defineReportByCust.jsp</result>
+		</action>
+		<action name="*modulefun" class="com.sail.cot.action.system.module.CotModuleFunAction" method="{1}">
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+	</package>
+</struts>  

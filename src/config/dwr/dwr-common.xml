@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+<init>
+	<converter id="specialconvert" class="com.sail.cot.filter.DwrPropertyFilter"/>
+</init>
+<!-- 
+	subbean 用于hibernate的 ManyToOne类型 将one的对象在转换的js中直接生成对应的对象
+	id固定为bean;
+	class:为该对象对应的一个超类或接口
+-->
+<subbean>
+	<bean id="bean" class="com.sail.cot.domain.IdEntity" />
+</subbean>
+<allow> 
+	<convert converter="exception" match="java.lang.Exception"></convert> 
+	<convert converter="bean" match="java.lang.StackTraceElement"></convert> 
+	<convert converter="bean" match="com.sail.cot.entity.TreeNode"></convert>
+	<create creator="spring" javascript="baseDataUtil">
+		<param name="beanName" value="BaseData" />
+	</create>
+</allow> 
+
+ 
+<signatures>
+	<![CDATA[
+		]]> 
+</signatures>
+</dwr>
+

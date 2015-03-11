@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+          "http://struts.apache.org/dtds/struts-2.0.dtd">  
+<struts> 
+	<!-- struts2编码默认就是UTF－8，不用再用过滤器去指定编码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	
+	<!-- 这个属性默认为false, 设置为true时，为开发模式，修改配置文件不用重启，支持热部署 -->
+	<constant name="struts.devMode" value="true" />
+	
+	<!-- 访问action的后缀名，默认为action -->
+	<constant name="struts.action.extension" value="do" />
+	
+	<constant name="struts.objectFactory" value="spring" />
+	
+	<package name="combo" extends="struts-default">
+		<action name="commoncombo" class="com.sail.cot.action.CotComboAction" method="query">
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+		<!-- 带权限过滤的下拉框 -->
+		<action name="commonpopedomcombo" class="com.sail.cot.action.CotComboAction" method="popedomquery">
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+	</package>
+	
+	
+	<include file="config/struts/struts-module.xml"></include>
+	<include file="config/struts/struts-index.xml"></include>
+	<include file="config/struts/struts-icon.xml"></include>
+	<!-- 数据字段配置 开始-->
+	<include file="config/struts/struts-dictionary.xml"></include>
+	<include file="config/struts/struts-nation.xml"></include>
+	<include file="config/struts/struts-area.xml"></include>
+	<include file="config/struts/struts-provice.xml"></include>
+	<!-- 系统设置 -->
+	<!-- 公司-->
+	<include file="config/struts/struts-company.xml"></include>
+	<!-- 部门-->
+	<include file="config/struts/struts-dept.xml"></include>
+	<!-- 员工-->
+	<include file="config/struts/struts-emps.xml"></include>
+	<include file="config/struts/struts-seq.xml"></include>
+	
+	<!-- 配置工厂信息 -->
+	<include file="config/struts/struts-contact.xml"></include>
+	
+	<!-- 客户-->
+	<include file="config/struts/struts-customer.xml"></include>
+	<!-- 权限，可见性 -->
+	<include file="config/struts/struts-popedom.xml"></include>
+	<!-- 邮件系统 -->
+	<include file="config/struts/struts-mail.xml"></include>
+	<include file="config/struts/struts-mailaccountcfg.xml"></include>
+	<include file="config/struts/struts-mailsend.xml"></include>
+	<include file="config/struts/struts-mailtree.xml"></include>
+	<include file="config/struts/struts-mailtemplate.xml"></include>
+	<!-- 报表打印 -->
+	<include file="config/struts/struts-report.xml"></include>
+	<!-- 报表类型 -->
+	<include file="config/struts/struts-rptfile.xml"></include>
+	<!-- 短信管理 -->
+	<include file="config/struts/struts-sms.xml"></include>
+	<!--传真管理 -->
+	<include file="config/struts/struts-fax.xml"></include>
+	<!--统计报表 -->
+	<include file="config/struts/struts-statistics.xml"></include>
+	<!--报价管理 -->
+	<include file="config/struts/struts-price.xml"></include>
+	<!--客户导入 -->
+	<include file="config/struts/struts-customerexcel.xml"></include>
+	<!--洲-->
+	<include file="config/struts/struts-area.xml"></include>
+	<!--联系人分组，用于群发-->
+	<include file="config/struts/struts-contactgroup.xml"></include>
+	<!--日志信息-->
+	<include file="config/struts/struts-syslog.xml"></include>
+	<!--联系人导入 -->
+	<include file="config/struts/struts-contactexcel.xml"></include>
+	<!--文件系统 -->
+	<include file="config/struts/struts-filesystem.xml"></include>
+</struts>  

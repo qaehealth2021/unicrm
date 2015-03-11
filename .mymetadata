@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="unicrm"
+  id="myeclipse.1296269068660"
+  context-root="/unicrm"
+  j2ee-spec="5.0"
+  archive="unicrm.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

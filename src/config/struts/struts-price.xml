@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+          "http://struts.apache.org/dtds/struts-2.0.dtd">  
+<struts> 
+	<package name="priceZheng" extends="struts-default">
+		<action name="*_priceZheng" class="com.sail.cot.action.price.CotPriceAction" method="{1}">
+			<result name="query">/price/price.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+	</package>
+	<package name="pricePin" extends="struts-default">
+		<action name="*_pricePin" class="com.sail.cot.action.price.CotPricePinAction" method="{1}">
+			<result name="query">/price/pin.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+	</package>
+	<package name="priceKong" extends="struts-default">
+		<action name="*_priceKong" class="com.sail.cot.action.price.CotPriceKongAction" method="{1}">
+			<result name="query">/price/kong.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+	</package>
+</struts>  

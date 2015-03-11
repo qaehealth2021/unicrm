@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+	<allow>
+		<create creator="spring" javascript="cotFileSystemService">
+			<param name="beanName" value="CotFileSystemService" />
+		</create>
+		<create creator="spring" javascript="cotFileTreeService">
+			<param name="beanName" value="CotFileTreeService" />
+		</create>
+	</allow>
+	<signatures>
+		<![CDATA[ 
+			cotFileSystemService.deleteFile(List<Integer> ids);
+			cotFileSystemService.saveFileShares(Integer[] fileSystemIds,Integer[] emps);
+			cotFileSystemService.deleteFileShares(Integer[] fileSystemIds,Integer[] emps);
+			cotFileSystemService.saveShareCommon(List<Integer> fileSystemIds,boolean flag);
+		]]>
+	</signatures>
+</dwr>

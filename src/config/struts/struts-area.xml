@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+          "http://struts.apache.org/dtds/struts-2.0.dtd">  
+<struts> 
+	<package name="area" extends="struts-default">
+		<action name="*_area" class="com.sail.cot.action.systemdic.CotAreaAction" method="{1}">
+			<result name="query">/systemdic/area/area.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+	</package>
+</struts>  

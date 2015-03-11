@@ -1,0 +1,29 @@
+{
+    "projectName": "QH MAIL",
+    "deployDir": "QH MAIL Dir",
+    "licenseText": "QH MAIL System",
+    "pkgs": [{
+    	"name": "common",
+    	"isDebug": true,
+		"fileIncludes": [{
+            "text": "constants.js",
+            "path": "mail/common/"
+        }]
+    },{
+    	"name": "accountCfg",
+    	"isDebug": true,
+		"fileIncludes": [{
+            "text": "mailAccountCfgAddCard.js",
+            "path": "mail/accountCfg/"
+        },{
+        	"text": "mailAccountCfgGrid.js",
+            "path": "mail/accountCfg/"
+        },{
+        	"text": "mailAccountCfgStore.js",
+            "path": "mail/accountCfg/"
+        },{
+        	"text": "mailAccountCfgToolbar.js",
+            "path": "mail/accountCfg/"
+        }]
+    }]
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Excel导入XML文件配置规则说明
+	1、子节点的名字与Excel文件中导入的字段名字相同
+	2、属性说明：<type>:表示导入字段的类型，Normal：普通类型，ID:带ID类型，Formula:公式类型
+			 <property>:对象属性
+			 <value>:Excel文件中该单元格的值
+			 
+			 ===============ID类单元格==================
+			 <IdSource>:获取Id值的数据对象，
+			 <IdProperty>:获取该对象的那个属性的值
+			 
+			 ===============公式类单元格=================
+			 <foumulaSource>:公式来源
+			 <foumulaId>:公式来源ID
+			 <expressproperty>:获取公式配置的属性
+			 <calClass>:该属性的公式计算类，通过调用getCalValue方法获取计算后的值
+ -->
+<fieldSet>
+	<moduleName>
+		<type>Normal</type>
+		<property>moduleName</property>
+	</moduleName>
+	<moduleUrl>
+		<type>Normal</type>
+		<property>moduleUrl</property>
+	</moduleUrl>
+	<priceOut>
+		<type>Formula</type>
+		<property>priceOut</property>
+		<calClass>com.sail.imp.excel.PriceoutFoumulaExpress</calClass>
+		<foumulaSource>CotEleCfg</foumulaSource>
+		<foumulaId>id</foumulaId>
+		<idValue>1</idValue>
+		<expressproperty>expressIn</expressproperty>
+	</priceOut>
+</fieldSet>

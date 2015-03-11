@@ -1,0 +1,137 @@
+/*!
+ * Ext JS Library 3.0.0
+ * Copyright(c) 2006-2009 Ext JS, LLC
+ * licensing@extjs.com
+ * http://www.extjs.com/license
+ */
+#img-chooser-dlg .details {
+	padding: 10px;
+	text-align: center;
+}
+
+#img-chooser-dlg .details-info {
+	border-top: 1px solid #cccccc;
+	font: 11px Arial, Helvetica, sans-serif;
+	margin-top: 5px;
+	padding-top: 5px;
+	text-align: left;
+}
+
+#img-chooser-dlg .details-info b {
+	color: #555555;
+	display: block;
+	margin-bottom: 4px;
+}
+
+#img-chooser-dlg .details-info span {
+	display: block;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+.pic-view {
+	font: 11px Arial, Helvetica, sans-serif;
+	/*width: 100%;
+	height: 100%;*/
+}
+
+.pic-view .thumb {
+	padding: 3px;
+}
+
+.pic-view .thumb-wrap {
+	float: left;
+	margin: 0px;
+	margin-right: 0;
+	padding: 3px;
+	width: 84px;
+	height: 96px;
+}
+
+.pic-view .thumb-wrap-big {
+	float: left;
+	margin: 0px;
+	margin-right: 0;
+	padding: 16px;
+	width: 90px;
+	height: 90px;
+}
+
+.icon-text-span {
+	font-size:13;
+	width: 80px;
+}
+
+.pic-view .x-view-over {
+	cursor: pointer;
+	/*background: #EFEFEF
+		url(../../common/ext/resources/images/default/grid/row-over.gif)
+		repeat-x left top;
+	padding: 3px;
+	-webkit-border-radius: 10px;
+	-webkit-box-shadow: inset 0 3px 3px #888;*/
+}
+
+.pic-view .x-view-selected {
+	background: #CEDCF0;
+	cursor: pointer;
+	-webkit-border-radius: 13px;
+	/* padding: 3px;
+	-webkit- box-shadow: inset 0 3px 3px #888;*/
+}
+
+.pic-view .x-view-selected .thumb {
+	background: transparent;
+}
+
+.pic-view .x-view-selected span {
+	color: #1A4D8F;
+}
+
+.pic-view .loading-indicator {
+	font-size: 11px;
+	background-image:
+		url('../../common/ext/resources/images/default/grid/loading.gif');
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 20px;
+	margin: 10px;
+}
+
+.module-dnd {
+	background: url(../icons/add.png) 0 5px no-repeat !important;
+}
+
+.icon-text {
+	padding-left: 10px;
+	display: inline-block;
+	background: url(../../common/ext/resources/images/extend/icon_text_l.png) no-repeat 0px 0px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.icon-text span {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 10px;
+	LINE-height: 20px;
+	DISPLAY: inline-block;
+	background: url(../../common/ext/resources/images/extend/icon_text_r.png) no-repeat right center;
+	height: 20px;
+	color: #fff;
+}
+
+.main-center-div {
+	padding-top: 80px;
+	text-align: center;
+}
+
+.main-center {
+	MARGIN-RIGHT: auto;
+	MARGIN-LEFT: auto;
+}
+
+.thumb img {
+	-webkit-border-radius: 10px;
+}

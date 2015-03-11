@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+          "http://struts.apache.org/dtds/struts-2.0.dtd">  
+<struts> 
+	<package name="nation" extends="struts-default">
+		<action name="*_nation" class="com.sail.cot.action.systemdic.CotNationAction" method="{1}">
+			<result name="query">/systemdic/nation/nation.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+	</package>
+</struts>  

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+          "http://struts.apache.org/dtds/struts-2.0.dtd">  
+<struts> 
+	<package name="emps" extends="struts-default">
+		<action name="*_emps" class="com.sail.cot.action.system.emps.CotEmpsAction" method="{1}">
+			<result name="query">/system/emps/emps.jsp</result>
+			<result name="modify">/system/emps/editor/empsEditor.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+	</package>
+</struts>  

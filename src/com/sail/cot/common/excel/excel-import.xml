@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	Excel 通用导入方法XML定义 
+	table（必须）：存放数据库的表，用于表示要忘那张表插入数据
+	convert_key:(选填)：覆盖关键字，true表示，根据该列的值来查询数据库空是否有记录存在，有的话覆盖，没有的话插入
+		query_fields（选填）：覆盖记录的额外查询条件，必须是field的配置项，多个的时候，用“,”隔开
+	domain-package(必须):定义在系统对象映射类所在的包
+	field(必填)：存放要插入数据库的字段，改字段的值从Excel文件中读取,改域配置有一些属性如下
+		default_value(选填)：默认值(目前只能是简单类型，没办法实现日期类型)
+		relate_table(选填)：关联的数据库表（如果需要关联查询或插入其他表，需要填写该属性），
+							一般用于，Excel写的是中文，而插入数据库的时候需要是ID
+							（注意：要写成对象名，不能用数据库名，如：CotCompany,而不是cot_company）
+		query_json(选填)：需要关联查询的或者插入的值，用json表示如：{flag=pjlb,delete_flag=Y}
+		db_op(选填):数据库操作模式，目前有的值为
+					query:查询（根据field的值查询出相关数据）
+					insert：插入（更加field的值，插入数据库表）
+		db_op_field(选填,多个列时用","隔开,插入时同时插入进多列,查询时用"or"):查询/插入的数据库字段（当db_op为query时）,插入到数据库的字段(（当db_op为insert时)
+		return_field(选填):查询/插入结果的返回值,返回当中的某列，
+						  可选值为 （1）、普通属性：如id，ele_id,注：数据库的字段
+						  		  （2）、Obj.attr：Obj:Hibernate映射的对象，attr:对象的属性（对应于java的配置）
+						  如果retun_field的值填为：Obj.attr的形式，
+						  如factoryId.id，表示该关联对象在hibernate中配置为一对多或多对多的模式，是一个对象
+						  其中Obj表示hibernate映射的对象，attr表示该对象的一个属性
+		
+		注：以下3个auto字段必须同时出现的			  
+		auto_gen_code:(选填)：是否需要自动生成编码(sequcenceService.getAllNo()的type参数)
+		auto_gen_field:(选填)：需要自动编码的字段
+		auto_gen_class:(选填)：进行自动编码的处理类（必须实现com.sail.cot.custinterface.SequeceService接口）
+		——————————————————————————————————————————————————————————————————————————————————————
+		rely_on(选填)：依赖项，表示改field字段依赖于配置的字段，用逗号隔开
+		rely_mode(选填)：依赖模式，有两个取值：single和double，
+						single表示单向依赖，即该field只依赖与rely_on配置的值
+						double：双向依赖，即该field既依赖于rely_on，rely_on配置的值也依赖于该field
+		rely_class(选填)：依赖想与该field之间需要处理的类，该类必须实现ExcelRelyOnBiz这个接口，
+						  需要精确到包名如：com.achui.cot.class
+		——————————————————————————————————————————————————————————————————————————————————————
+		data_type(选填)：该字段的数据类型（默认为String类型）
+		data_length(选填)：该字段的数据长度（如果不填，则默认不检验）
+		check_class(选填)：该字段的校验类，必须实现IExcelCheck接口
+		——————————————————————————————————————————————————————————————————————————————————————
+		loginId-key(选填)：登录人
+		identityId-key(选填)：全局标识
+		addDate-key(选填)：创建日期
+
+-->
+<excel-import>
+	<domain-package>com.sail.cot.domain</domain-package>
+	<table>cot_clause</table>
+	<convert-key>clause_name</convert-key>
+	<field-set>
+		<field data_type="java.lang.String" data_length="2" check_class="com.sail.cot.common.excel.check.MyDataCheck">clause_name</field>
+		<field data_type="java.lang.String" data_length="100" check_class="com.sail.cot.common.excel.check.MyDataCheck">clause_remark</field>
+	</field-set>
+</excel-import>
+<!--  
+<excel-import>
+	<domain-package>com.sail.cot.domain</domain-package>
+	<table>cot_emps</table>
+	<convert-key>emps_id</convert-key>
+	<field-set>
+		<field data_type="java.lang.String" data_length="100",check_class="">emps_id</field>
+		<field relate_table="CotCompany" 
+			   db_op="insert" 
+			   db_op_field="COMPANY_SHORTNAME" 
+			   return_field="id">cot_company_id</field>
+		<field>emps_name</field>
+		<field rely_on="emps_name,emps_name_en" 
+			   rely_mode="single" 
+			   rely_class="com.sail.cot.common.excel.MyExcelBiz">emps_remark</field>
+		<field>emps_name_en</field>
+	</field-set>
+</excel-import>
+-->
+

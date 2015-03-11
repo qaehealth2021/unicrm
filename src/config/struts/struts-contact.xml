@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+          "http://struts.apache.org/dtds/struts-2.0.dtd">  
+<struts> 
+	<package name="contact" extends="struts-default">
+		<action name="*_factorycontact" class="com.sail.cot.action.contact.CotContactAction" method="{1}">
+			<result name="query">/contact/contact.jsp</result>
+			<result name="modify">/contact/editor/contactedit.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+		<action name="*_customercontact" class="com.sail.cot.action.contact.CotContactAction" method="{1}">
+			<result name="query">/contact/contact.jsp</result>
+			<result name="modify">/contact/editor/contactedit.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+		
+	</package>
+</struts>  

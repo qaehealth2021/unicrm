@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+	<allow>
+		<create creator="spring" javascript="mailAccountCfgService">
+			<param name="beanName" value="MailAccountCfgService" />
+		</create>
+		<create creator="spring" javascript="mailReadService">
+			<param name="beanName" value="MailReadService" />
+		</create>
+		<create creator="spring" javascript="mailReciveService">
+			<param name="beanName" value="MailReciveService" />
+		</create>
+		<create creator="spring" javascript="mailTreeService">
+			<param name="beanName" value="MailTreeService" />
+		</create>
+		<create creator="spring" javascript="mailSendService">
+			<param name="beanName" value="MailSendService" />
+		</create>
+		<create creator="spring" javascript="mailUpdateService">
+			<param name="beanName" value="MailUpdateService" />
+		</create>
+		<create creator="spring" javascript="mailTemplateService">
+			<param name="beanName" value="MailTemplateService" />
+		</create>
+	</allow>
+
+	<signatures>
+		<![CDATA[ 
+			mailTreeService.moveMailToNode(Integer nodeId, List<Integer> mailIds);
+			mailTreeService.moveMailToDel(Integer accountId, List<Integer> mailIds);
+			mailUpdateService.deleteMails(List<Integer> ids);
+			mailUpdateService.updateMailRead(List<Integer> ids, boolean isRead);
+			mailUpdateService.relateOrder(List<Integer> ids,String jsonParam);
+			
+		]]>
+	</signatures>
+</dwr>

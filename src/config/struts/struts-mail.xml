@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+          "http://struts.apache.org/dtds/struts-2.0.dtd">  
+<struts> 
+	<package name="mail" extends="struts-default">
+		<action name="*_mail" class="com.sail.cot.action.mail.CotMailAction" method="{1}">
+			<result name="query">/mail/index/index.jsp</result>
+			<result name="print">/mail/index/print.jsp</result>
+			<result name="info">/mail/info/info.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+	</package>
+</struts>  

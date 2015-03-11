@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC  
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+          "http://struts.apache.org/dtds/struts-2.0.dtd">  
+<struts> 
+	<package name="mailtemplate" extends="struts-default">
+		<action name="*_mailtemplate" class="com.sail.cot.action.mail.CotMailTemplateAction" method="{1}">
+			<result name="query">/mail/template/mailTemplate.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+		<action name="*_mailsignature" class="com.sail.cot.action.mail.CotMailTemplateAction" method="{1}">
+			<result name="query">/mail/signature/mailSignature.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+		<action name="*_mailquicktxt" class="com.sail.cot.action.mail.CotMailTemplateAction" method="{1}">
+			<result name="query">/mail/quicktxt/mailQuicktxt.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+		<action name="*_shareattach" class="com.sail.cot.action.shareattach.ShareAttachAction" method="{1}">
+			<result name="query">/mail/shareattach/shareattach.jsp</result>
+			<result name="jsondata">/jsondata.jsp</result>
+		</action>
+	</package>
+</struts>  
