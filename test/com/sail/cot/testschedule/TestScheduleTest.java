@@ -15,7 +15,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * <p>Company: 厦门市旗航软件有限公司</p>
  * <p>Create Time: Sep 13, 2012 6:15:35 PM </p>
  * <p>Class Name: TestScheduleTest.java </p>
- * @author achui_1980
+ * @author achui_
  *
  */
 @RunWith(SpringJUnit4ClassRunner.class)
